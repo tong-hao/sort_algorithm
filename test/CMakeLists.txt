@@ -9,3 +9,7 @@ add_test(NAME selection_sort COMMAND selection_sort)
 add_executable(insertion_sort InsertionSortTest.cpp)
 target_link_libraries(insertion_sort ${GTEST_LIB} )
 add_test(NAME insertion_sort COMMAND insertion_sort)
+
+add_executable(quick_sort QuickSortTest.cpp)
+target_link_libraries(quick_sort ${GTEST_LIB} )
+add_test(NAME quick_sort COMMAND quick_sort)
