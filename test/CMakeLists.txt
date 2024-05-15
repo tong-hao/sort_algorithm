@@ -13,3 +13,7 @@ add_test(NAME insertion_sort COMMAND insertion_sort)
 add_executable(quick_sort QuickSortTest.cpp)
 target_link_libraries(quick_sort ${GTEST_LIB} )
 add_test(NAME quick_sort COMMAND quick_sort)
+
+add_executable(merge_sort MergeSortTest.cpp)
+target_link_libraries(merge_sort ${GTEST_LIB} )
+add_test(NAME merge_sort COMMAND merge_sort)
