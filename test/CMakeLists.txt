@@ -17,3 +17,7 @@ add_test(NAME quick_sort COMMAND quick_sort)
 add_executable(merge_sort MergeSortTest.cpp)
 target_link_libraries(merge_sort ${GTEST_LIB} )
 add_test(NAME merge_sort COMMAND merge_sort)
+
+add_executable(heap_sort HeapSortTest.cpp)
+target_link_libraries(heap_sort ${GTEST_LIB} )
+add_test(NAME heap_sort COMMAND heap_sort)
